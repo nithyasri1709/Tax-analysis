@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TaxRulesConfigSchema",
+  "type": "object",
+  "required": [
+    "financial_year",
+    "assessment_year",
+    "governing_act",
+    "verification_date",
+    "source_url",
+    "cess_rate",
+    "old_regime",
+    "new_regime",
+    "deductions",
+    "advance_tax_schedule"
+  ],
+  "properties": {
+    "financial_year": { "type": "string" },
+    "assessment_year": { "type": "string" },
+    "governing_act": { "type": "string" },
+    "verification_date": { "type": "string" },
+    "source_url": { "type": "string" },
+    "cess_rate": { "type": "number" },
+    "old_regime": {
+      "type": "object",
+      "required": ["standard_deduction", "rebate_87a", "slabs", "surcharge_brackets"],
+      "properties": {
+        "standard_deduction": { "type": "object" },
+        "rebate_87a": { "type": "object" },
+        "slabs": { "type": "object" },
+        "surcharge_brackets": { "type": "array" },
+        "house_property_loss_setoff_cap": { "type": "number" }
+      }
+    },
+    "new_regime": {
+      "type": "object",
+      "required": ["standard_deduction", "rebate_87a", "slabs", "surcharge_brackets"],
+      "properties": {
+        "standard_deduction": { "type": "object" },
+        "rebate_87a": { "type": "object" },
+        "slabs": { "type": "array" },
+        "surcharge_brackets": { "type": "array" }
+      }
+    },
+    "deductions": { "type": "object" },
+    "advance_tax_schedule": { "type": "array" }
+  }
+}

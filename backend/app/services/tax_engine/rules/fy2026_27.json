@@ -1,0 +1,146 @@
+{
+  "financial_year": "2026-27",
+  "assessment_year": "Tax Year 2026-27",
+  "governing_act": "Income-tax Act, 2025 (effective 1 April 2026)",
+  "verification_date": "2026-11-20",
+  "source_url": "https://incometax.gov.in",
+  "cess_rate": 0.04,
+  "old_regime": {
+    "standard_deduction": {
+      "salaried": 50000,
+      "pensioner": 50000,
+      "self_employed": 0
+    },
+    "rebate_87a": {
+      "threshold": 500000,
+      "max_rebate": 12500,
+      "marginal_relief": false
+    },
+    "slabs": {
+      "regular": [
+        { "min": 0, "max": 250000, "rate": 0.0 },
+        { "min": 250000, "max": 500000, "rate": 0.05 },
+        { "min": 500000, "max": 1000000, "rate": 0.20 },
+        { "min": 1000000, "max": null, "rate": 0.30 }
+      ],
+      "senior_60_plus": [
+        { "min": 0, "max": 300000, "rate": 0.0 },
+        { "min": 300000, "max": 500000, "rate": 0.05 },
+        { "min": 500000, "max": 1000000, "rate": 0.20 },
+        { "min": 1000000, "max": null, "rate": 0.30 }
+      ],
+      "super_senior_80_plus": [
+        { "min": 0, "max": 500000, "rate": 0.0 },
+        { "min": 500000, "max": 1000000, "rate": 0.20 },
+        { "min": 1000000, "max": null, "rate": 0.30 }
+      ]
+    },
+    "surcharge_brackets": [
+      { "threshold": 5000000, "rate": 0.10, "marginal_relief": true },
+      { "threshold": 10000000, "rate": 0.15, "marginal_relief": true },
+      { "threshold": 20000000, "rate": 0.25, "marginal_relief": true },
+      { "threshold": 50000000, "rate": 0.37, "marginal_relief": true }
+    ],
+    "house_property_loss_setoff_cap": 200000
+  },
+  "new_regime": {
+    "standard_deduction": {
+      "salaried": 75000,
+      "pensioner": 75000,
+      "self_employed": 0
+    },
+    "rebate_87a": {
+      "threshold": 1200000,
+      "max_rebate": 60000,
+      "marginal_relief": true
+    },
+    "slabs": [
+      { "min": 0, "max": 400000, "rate": 0.0 },
+      { "min": 400000, "max": 800000, "rate": 0.05 },
+      { "min": 800000, "max": 1200000, "rate": 0.10 },
+      { "min": 1200000, "max": 1600000, "rate": 0.15 },
+      { "min": 1600000, "max": 2000000, "rate": 0.20 },
+      { "min": 2000000, "max": 2400000, "rate": 0.25 },
+      { "min": 2400000, "max": null, "rate": 0.30 }
+    ],
+    "surcharge_brackets": [
+      { "threshold": 5000000, "rate": 0.10, "marginal_relief": true },
+      { "threshold": 10000000, "rate": 0.15, "marginal_relief": true },
+      { "threshold": 20000000, "rate": 0.25, "marginal_relief": true }
+    ]
+  },
+  "deductions": {
+    "80C": {
+      "limit": 150000,
+      "allowed_in_new_regime": false,
+      "act_2025_ref": "Section 123(1)",
+      "components": ["epf", "ppf", "elss", "life_insurance", "home_loan_principal", "tuition_fees", "nsc", "five_year_fd"]
+    },
+    "80CCD_1B": {
+      "limit": 50000,
+      "allowed_in_new_regime": false,
+      "act_2025_ref": "Section 125(2)",
+      "description": "Additional NPS employee contribution"
+    },
+    "80CCD_2": {
+      "govt_percentage_limit": 0.14,
+      "private_percentage_limit": 0.14,
+      "allowed_in_new_regime": true,
+      "act_2025_ref": "Section 125(3)",
+      "description": "Employer contribution to NPS"
+    },
+    "80D": {
+      "allowed_in_new_regime": false,
+      "act_2025_ref": "Section 128",
+      "self_family_regular_limit": 25000,
+      "self_family_senior_limit": 50000,
+      "parents_regular_limit": 25000,
+      "parents_senior_limit": 50000,
+      "preventive_checkup_sublimit": 5000
+    },
+    "80E": {
+      "allowed_in_new_regime": false,
+      "act_2025_ref": "Section 131",
+      "limit": null,
+      "max_years": 8,
+      "description": "Higher education loan interest"
+    },
+    "24_b": {
+      "allowed_in_new_regime": false,
+      "act_2025_ref": "Section 45(b)",
+      "self_occupied_interest_limit": 200000,
+      "let_out_interest_limit": null,
+      "max_loss_setoff": 200000
+    },
+    "80G": {
+      "allowed_in_new_regime": false,
+      "act_2025_ref": "Section 135",
+      "description": "Donations to eligible institutions"
+    },
+    "80TTA": {
+      "allowed_in_new_regime": false,
+      "act_2025_ref": "Section 142(1)",
+      "limit": 10000,
+      "applies_to": "regular"
+    },
+    "80TTB": {
+      "allowed_in_new_regime": false,
+      "act_2025_ref": "Section 142(2)",
+      "limit": 50000,
+      "applies_to": "senior"
+    },
+    "hra": {
+      "allowed_in_new_regime": false,
+      "act_2025_ref": "Section 19(2)(c)",
+      "metro_percent": 0.50,
+      "non_metro_percent": 0.40,
+      "rent_excess_percent": 0.10
+    }
+  },
+  "advance_tax_schedule": [
+    { "due_date": "15-06", "cumulative_percentage": 0.15 },
+    { "due_date": "15-09", "cumulative_percentage": 0.45 },
+    { "due_date": "15-12", "cumulative_percentage": 0.75 },
+    { "due_date": "15-03", "cumulative_percentage": 1.00 }
+  ]
+}
