@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: tax_assistant_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: tax_user
+      POSTGRES_PASSWORD: tax_secure_password_2026
+      POSTGRES_DB: tax_assistant_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tax_user -d tax_assistant_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: tax_assistant_backend
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://tax_user:tax_secure_password_2026@db:5432/tax_assistant_db
+      JWT_SECRET_KEY: super_secret_jwt_key_tax_assistant_2026_production
+      FERNET_ENCRYPTION_KEY: U29tZVNlY3JldEZlcm5ldEtleUZvckVuY3J5cHRpb24xMjM=
+      ENVIRONMENT: production
+      STORAGE_DIR: /app/data/storage
+      MAX_FILE_SIZE_BYTES: 10485760
+    volumes:
+      - backend_storage:/app/data/storage
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: tax_assistant_frontend
+    restart: always
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+
+volumes:
+  postgres_data:
+  backend_storage:

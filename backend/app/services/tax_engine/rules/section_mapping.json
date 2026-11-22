@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "source": "Income-tax Act 1961 and Income-tax Act 2025 cross-reference table",
+    "verification_date": "2026-11-20",
+    "source_url": "https://incometax.gov.in"
+  },
+  "mappings": {
+    "16(ia)": {
+      "act_1961": "Section 16(ia)",
+      "act_2025": "Section 31(1)",
+      "title": "Standard Deduction for Salaried Employees & Pensioners",
+      "verified": true,
+      "notes": "Flat deduction from salary income; revised to ₹75,000 under New Regime from FY 2024-25 / FY 2025-26."
+    },
+    "10(13A)": {
+      "act_1961": "Section 10(13A)",
+      "act_2025": "Section 19(2)(c)",
+      "title": "House Rent Allowance (HRA) Exemption",
+      "verified": true,
+      "notes": "Least of: actual HRA, rent paid minus 10% basic+DA, 50%/40% basic+DA. Old regime only."
+    },
+    "24(b)": {
+      "act_1961": "Section 24(b)",
+      "act_2025": "Section 45(b)",
+      "title": "Deduction for Home Loan Interest (Income from House Property)",
+      "verified": true,
+      "notes": "Capped at ₹2,00,000 for self-occupied property. Old regime only."
+    },
+    "80C": {
+      "act_1961": "Section 80C",
+      "act_2025": "Section 123(1)",
+      "title": "Deduction for Life Insurance, PF, PPF, ELSS, Tuition, Home Loan Principal",
+      "verified": true,
+      "notes": "Combined limit ₹1,50,000. Old regime only."
+    },
+    "80CCD(1B)": {
+      "act_1961": "Section 80CCD(1B)",
+      "act_2025": "Section 125(2)",
+      "title": "Additional Deduction for National Pension System (NPS)",
+      "verified": true,
+      "notes": "Additional ₹50,000 for individual NPS voluntary contribution. Old regime only."
+    },
+    "80CCD(2)": {
+      "act_1961": "Section 80CCD(2)",
+      "act_2025": "Section 125(3)",
+      "title": "Employer's Contribution to National Pension System (NPS)",
+      "verified": true,
+      "notes": "Allowed in both Old and New regimes (up to 14% of salary for Govt and Private employers)."
+    },
+    "80D": {
+      "act_1961": "Section 80D",
+      "act_2025": "Section 128",
+      "title": "Medical Insurance Premium and Preventive Health Check-up",
+      "verified": true,
+      "notes": "Self/family ₹25,000 (₹50,000 senior); parents ₹25,000 (₹50,000 senior). Old regime only."
+    },
+    "80E": {
+      "act_1961": "Section 80E",
+      "act_2025": "Section 131",
+      "title": "Interest on Loan taken for Higher Education",
+      "verified": true,
+      "notes": "No upper cap; available for up to 8 assessment years. Old regime only."
+    },
+    "80G": {
+      "act_1961": "Section 80G",
+      "act_2025": "Section 135",
+      "title": "Donations to Certain Funds, Charitable Institutions",
+      "verified": true,
+      "notes": "50% or 100% deduction subject to qualifying limits. Old regime only."
+    },
+    "80TTA": {
+      "act_1961": "Section 80TTA",
+      "act_2025": "Section 142(1)",
+      "title": "Interest on Savings Accounts (Non-Senior Individuals)",
+      "verified": true,
+      "notes": "Up to ₹10,000 for individuals aged under 60. Old regime only."
+    },
+    "80TTB": {
+      "act_1961": "Section 80TTB",
+      "act_2025": "Section 142(2)",
+      "title": "Interest on Deposits in Bank/Post Office for Senior Citizens",
+      "verified": true,
+      "notes": "Up to ₹50,000 for individuals aged 60 and above. Old regime only."
+    },
+    "80DD": {
+      "act_1961": "Section 80DD",
+      "act_2025": "Section 129",
+      "title": "Maintenance and Medical Treatment of Disabled Dependent",
+      "verified": false,
+      "notes": "Verify against finalized 2025 rules; ₹75,000 standard disability, ₹1,25,000 severe disability. Old regime only."
+    },
+    "80DDB": {
+      "act_1961": "Section 80DDB",
+      "act_2025": "Section 130",
+      "title": "Medical Treatment of Specified Diseases",
+      "verified": false,
+      "notes": "Verify against finalized 2025 rules; ₹40,000 (₹1,00,000 for senior). Old regime only."
+    },
+    "80U": {
+      "act_1961": "Section 80U",
+      "act_2025": "Section 143",
+      "title": "Deduction in Case of a Person with Disability",
+      "verified": false,
+      "notes": "Verify against finalized 2025 rules; ₹75,000 standard, ₹1,25,000 severe. Old regime only."
+    },
+    "87A": {
+      "act_1961": "Section 87A",
+      "act_2025": "Section 92",
+      "title": "Rebate of Income-tax in Case of Certain Individuals",
+      "verified": true,
+      "notes": "Up to ₹60,000 for income <= ₹12,00,000 in New Regime (FY 25-26 & FY 26-27), up to ₹12,500 in Old Regime for income <= ₹5,00,000."
+    },
+    "115BAC": {
+      "act_1961": "Section 115BAC",
+      "act_2025": "Section 85",
+      "title": "Default Concessional Tax Regime (New Regime)",
+      "verified": true,
+      "notes": "Concessional slab rates with limited deductions. Default regime from AY 2024-25 onwards."
+    },
+    "234A": {
+      "act_1961": "Section 234A",
+      "act_2025": "Section 281",
+      "title": "Interest for Default in Furnishing Return of Income",
+      "verified": true,
+      "notes": "1% simple interest per month or part month on unpaid tax."
+    },
+    "234B": {
+      "act_1961": "Section 234B",
+      "act_2025": "Section 282",
+      "title": "Interest for Defaults in Payment of Advance Tax (<90% of assessed tax)",
+      "verified": true,
+      "notes": "1% simple interest per month from 1st April of assessment year to date of determination."
+    },
+    "234C": {
+      "act_1961": "Section 234C",
+      "act_2025": "Section 283",
+      "title": "Interest for Deferment of Advance Tax Installments",
+      "verified": true,
+      "notes": "1% per month for shortfall in 15%, 45%, 75%, 100% installments."
+    }
+  }
+}
